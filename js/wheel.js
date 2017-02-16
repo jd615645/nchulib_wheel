@@ -19,7 +19,7 @@ $(document).ready(function($) {
 
   window.onload = function() {
     // creation of a 620x620 game
-    game = new Phaser.Game(620, 620, Phaser.AUTO, 'wheel', null, true);
+    game = new Phaser.Game(920, 920, Phaser.AUTO, 'wheel', null, true);
     // adding "PlayGame" state
     game.state.add("PlayGame",playGame);
     // launching "PlayGame" state
