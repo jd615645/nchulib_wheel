@@ -94,22 +94,23 @@ $(document).ready(function($) {
         console.log(slicePrizes[prize]);
 
         $('#prizeImage').attr('src', './img/' + slicePrizes[prize] + '.png');
-        $('#prizeImage').load(function(){
-          $('.ui.modal').modal({
-            onHide: function() {
-              // console.log('hidden');
-              audio.pause();
-              audio.currentTime = 0;
-            },
-            onShow: function() {
-              // console.log('shown');
-              audio.play();
-            }
-          }).modal('show');
-          return console.log(slicePrizes[prize]);
-         });
+        $('.ui.modal').modal({
+          onHide: function() {
+            // console.log('hidden');
+            audio.pause();
+            audio.currentTime = 0;
+          },
+          onShow: function() {
+            // console.log('shown');
+            audio.play();
+          }
+        }).modal('show');
+        return console.log(slicePrizes[prize]);
       }
   }
   $('.ui.modal').modal('hide');
+  $("img.lazy").lazyload({
+    effect : "fadeIn"
+  });
   // game.new($(document).width(), $(document).height(), 'wheel');
 });

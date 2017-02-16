@@ -9,6 +9,14 @@
   <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
+  <div id="fullPage">
+    <img class="lazy" id="qr" data-original="../img/qr.png" width="230" height="230">
+    <img class="lazy" id="adlogo" data-original="../img/adlogo.png">
+    <img class="lazy" id="liblogo" data-original="../img/liblogo.png">
+    <img class="lazy titleImg" id="title1" data-original="../img/title1.png">
+    <img class="lazy titleImg" id="title2" data-original="../img/title2.png">
+  </div>
+
   <div class="allCenter" id="main">
     <div class="ui container">
       <div id="wheel">
@@ -18,7 +26,7 @@
   <div class="ui modal">
     <i class="close icon"></i>
     <div class="content">
-      <img id="prizeImage" src="">
+      <img id="prizeImage" src="" width="800" height="600">
     </div>
   </div>
 
@@ -27,6 +35,7 @@
   </audio>
 
   <script src="./js/jquery-2.2.4.min.js"></script>
+  <script src="./js/jquery.lazyload.min.js"></script>
   <script src="./js/semantic.min.js"></script>
   <script src="./js/phaser.min.js" charset="utf-8"></script>
   <script src="./js/wheel.js" charset="utf-8"></script>
