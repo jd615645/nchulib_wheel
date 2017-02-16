@@ -73,3 +73,7 @@ canvas {
 .modal {
   text-align: center !important;
 }
+#prizeImage {
+  width: 800px;
+  height: 600px;
+}
