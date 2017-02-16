@@ -26,9 +26,15 @@ canvas {
 #fullPage img {
   position: absolute;
 }
-
-#qr {
+#rightBanner {
+  position: absolute;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#rightBanner img {
+  position: relative;
 }
 #adlogo {
   bottom: 0;
@@ -48,7 +54,6 @@ canvas {
   width: 260px;
 }
 #title2 {
-  right: 0;
   width: 190px;
 }
 

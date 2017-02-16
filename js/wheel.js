@@ -109,8 +109,4 @@ $(document).ready(function($) {
       }
   }
   $('.ui.modal').modal('hide');
-  $("img.lazy").lazyload({
-    effect : "fadeIn"
-  });
-  // game.new($(document).width(), $(document).height(), 'wheel');
 });
